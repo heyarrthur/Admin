@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 600px;
+}
+
+.day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.month-year {
+    font-weight: bold;
+    text-align: center;
+    grid-column: span 7;
+    margin-bottom: 10px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+.task {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Adicionando media queries para tornar o layout responsivo */
+@media (max-width: 600px) {
+    #calendar {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Adicionando mais media queries conforme necessário para diferentes tamanhos de tela */
