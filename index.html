@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Painel Controle | Denise</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Painel Administrativo</title>
 </head>
 <body>
 
@@ -14,6 +14,8 @@
         <div class="form-container">
             <label for="income">Rendimento:</label>
             <input type="number" id="income" placeholder="Digite o rendimento">
+            <label for="reason">Motivo:</label>
+            <input type="text" id="reason" placeholder="Digite o motivo">
             <button onclick="addIncome()">Adicionar Rendimento</button>
         </div>
 
@@ -22,8 +24,13 @@
             <p>Total de Rendimentos: <span id="totalIncome">0</span></p>
             <p>Porcentagem da Fatura Total: <span id="percentage">0%</span></p>
         </div>
+
+        <div class="faturamentos-container">
+            <h2>Faturamentos</h2>
+            <ul id="faturamentosList"></ul>
+        </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
