@@ -53,3 +53,54 @@ h1, h2 {
 .faturamentos-container {
   margin-top: 20px;
 }
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand .logo {
+  font-size: 1.5em;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  margin-left: 150px;
+  margin-right: 5px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  margin: -10px;
+  padding: 0;
+  display: flex;
+}
+
+.container {
+  padding-top: 40px; /* Ajuste de espaço para a barra de navegação */
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .brand {
+      margin-bottom: 10px;
+  }
+
+  .navbar nav {
+      margin-top: 10px;
+  }
+}
